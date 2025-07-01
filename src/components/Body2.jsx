@@ -13,6 +13,8 @@ const About = () => {
     { name: "Cleaning App", url: "https://wix-cleanic-project.vercel.app/" },
     { name: "Api Product", url: "https://perfect-product-api.vercel.app/" },
     { name: "Mejiwoo Fashion", url: "https://mejiwoo-fashion-project.vercel.app/" },
+    { name: "Perfect Books", url: "https://perfect-books.vercel.app/" },
+
   ]);
 
   const [creativeProjects] = useState([
