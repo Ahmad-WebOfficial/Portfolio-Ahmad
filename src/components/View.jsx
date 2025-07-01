@@ -6,7 +6,9 @@ import img5 from "../images/Clean.jpg";
 import img6 from "../images/fashion.jpg";     
 import img7 from "../images/api.jpg";     
 import img8 from "../images/clock.jpg";     
-import img9 from "../images/todo.jpg";     
+import img9 from "../images/todo.jpg";  
+import img10 from "../images/books.jpg";     
+
 
 import img1 from "../images/img55.jpg";     
 import Head from "../components/Head";
@@ -53,6 +55,11 @@ const ProjectManager = () => {
       name: "To Do App",
       url: "https://perfect-todo-iota.vercel.app/",
       image: img9,
+    },
+{
+      name: "Perfect Books",
+      url: "https://perfect-books.vercel.app/",
+      image: img10,
     },
 
     
