@@ -31,7 +31,7 @@ const HeroSection = () => {
             alt="Muhammad Ahmad Fridi"
             src={img22}
             onClick={openModal}
-            className="cursor-pointer w-65 h-65 md:w-82 md:h-82 rounded-full object-cover object-top mb-4 shadow-lg border-4 border-white"
+            className="cursor-pointer w-65 h-65 md:w-82 md:h-82 rounded-full object-contain object-top mb-4 shadow-lg border-4 border-white"
           />
         </div>
       </div>
