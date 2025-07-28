@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import img22 from "../images/ahmadfridi.png.jpg" 
+import img22 from "../images/ahmadfridi.jpg" 
 
 const HeroSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
