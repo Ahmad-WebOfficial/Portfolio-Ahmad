@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import img222 from "../images/img111.png";
 
 const About = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -55,7 +54,7 @@ const About = () => {
                     window.open(project.url, "_blank");
                   }
                 }}
-                title={`Open ${project.name}`}
+                title={Open ${project.name}}
               >
                 🔹 {project.name}
               </span>
@@ -196,4 +195,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About;
