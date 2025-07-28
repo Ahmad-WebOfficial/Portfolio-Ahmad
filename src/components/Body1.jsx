@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import img22 from "../images/ahmadfridi.jpg" 
+import img22 from "../images/ahmadfridi.jpg";
 
 const HeroSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <div className="relative">
       <div className="flex flex-col md:flex-row items-center justify-between lg:p-30 px-8 py-16 bg-[#1b263b] min-h-screen">
-        <div className="text-left space-y-4 md:w-166">
+        <div className="text-left space-y-4 md:w-[40rem]"> {/* updated md:w-166 */}
           <h1 className="text-5xl font-bold text-black">Muhammad Ahmad Fridi</h1>
           <h2 className="text-xl text-green-500 lg:text-2xl font-semibold">
             Full Stack Developer
@@ -28,7 +28,8 @@ const HeroSection = () => {
 
         <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center">
           <img
-            alt="Muhammad Ahmad Fridi"
+            loading="lazy"
+            alt="Click to enlarge Muhammad Ahmad Fridi"
             src={img22}
             onClick={openModal}
             className="cursor-pointer w-65 h-65 md:w-82 md:h-82 rounded-full object-contain object-top mb-4 shadow-lg border-4 border-white"
@@ -37,17 +38,23 @@ const HeroSection = () => {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center">
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center"
+          role="dialog"
+          aria-modal="true"
+        >
           <button
             onClick={closeModal}
             className="absolute top-6 right-6 text-white text-3xl font-bold"
+            aria-label="Close image modal"
           >
             ❌
           </button>
           <img
             src={img22}
-            alt="Full Size"
+            alt="Full Size of Muhammad Ahmad Fridi"
             className="max-w-full max-h-full rounded-lg shadow-2xl border-4 border-white"
+            loading="lazy"
           />
         </div>
       )}
