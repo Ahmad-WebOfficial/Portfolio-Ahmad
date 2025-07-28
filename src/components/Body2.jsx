@@ -185,21 +185,14 @@ const About = () => {
       </section>
 
       <div className="min-h-[400px] bg-[#1b1a1b] flex flex-col items-center p-5 md:p-10 text-white">
-        <img
-          src={img222}
-          alt="User Icon"
-          className="w-60 h-60 md:w-80 md:h-80 rounded-full object-contain object-center bg-white p-2 shadow-lg border-4 border-white"
-        />
-        <h1 className="text-3xl md:text-4xl font-bold mt-5 mb-3">
-          Muhammad Ahmad Fridi
-        </h1>
-        <p className="text-center text-gray-300 max-w-2xl mb-10">
-          I'm a passionate developer with a strong ambition to become a
-          full-stack developer. I’m currently sharpening my skills across both
-          front-end and back-end technologies. My future plan is to build my own
-          software house and contribute to impactful digital solutions.
-        </p>
-      </div>
+  <h1 className="text-3xl md:text-4xl font-bold mt-5 mb-3">
+    Muhammad Ahmad Fridi
+  </h1>
+  <p className="text-center text-gray-300 max-w-2xl mb-10">
+    I am an expert in full-stack development and I’m passionate about building scalable and impactful digital solutions. My journey involves mastering both front-end and back-end technologies to achieve my goal of launching my own software house. I also work as a freelancer, providing high-quality development services to clients around the world.
+  </p>
+</div>
+
     </>
   );
 };
