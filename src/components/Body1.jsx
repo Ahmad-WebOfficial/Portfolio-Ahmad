@@ -14,10 +14,10 @@ const HeroSection = () => {
         <div className="text-left space-y-4 md:w-166">
           <h1 className="text-5xl font-bold text-black">Muhammad Ahmad Fridi</h1>
           <h2 className="text-xl text-green-500 lg:text-2xl font-semibold">
-            Frontend Developer
+            Full Stack Developer
           </h2>
           <p className="text-gray-300 text-sm md:text-base">
-            I specialize in Web Development and Mobile Development.
+            I specialize in Web Development.
           </p>
           <Link to="/contact">
             <button className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow-md transition duration-300">
@@ -31,7 +31,7 @@ const HeroSection = () => {
             alt="Muhammad Ahmad Fridi"
             src={img22}
             onClick={openModal}
-            className="cursor-pointer w-63 h-63 md:w-80 md:h-80 rounded-full object-cover object-top mb-4 shadow-lg border-4 border-white"
+            className="cursor-pointer w-65 h-65 md:w-82 md:h-82 rounded-full object-cover object-top mb-4 shadow-lg border-4 border-white"
           />
         </div>
       </div>
