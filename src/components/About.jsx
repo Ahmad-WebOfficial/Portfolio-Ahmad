@@ -40,9 +40,9 @@ export default function AboutMe() {
               Pakistan
             </p>
             <p className="text-green-700 font-medium">
-              💼 I am an expert in <strong>Web Development</strong> and{" "}
-              <strong>Frontend Mobile App Development</strong>. I build
-              responsive, user-friendly websites and mobile apps with clean UI
+              💼 I am an expert in <strong>Web Development</strong> {" "}
+              </strong>. I build
+              responsive, user-friendly websites and web apps with clean UI
               and strong performance.
             </p>
             <p className="text-gray-700 text-lg font-medium">🇵🇰 Pakistan</p>
