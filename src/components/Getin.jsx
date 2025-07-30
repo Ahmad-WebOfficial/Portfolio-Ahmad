@@ -61,7 +61,7 @@ const Contact = () => {
     <>
       <Head />
 
-      <section className="bg-[#c9d8a0] py-10 px-5 md:flex md:justify-between md:items-center md:gap-10 md:px-12">
+      <section className="bg-[#c9d8a0] py-10 px-5 mt-12 md:flex md:justify-between md:items-center md:gap-10 md:px-12">
         <div className="md:w-1/2">
           <p className="text-[1.5rem] font-serif md:text-[2rem]">
             Feel free to reach out for collaboration or project inquiries!
