@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Head"; // Head.jsx = Header
-import Footer from "../components/Foter"; // Foter.jsx = Footer
+import Header from "../components/Head"; // ✅ Check your file name here
+import Footer from "../components/Foter"; // ✅ Check your file name here
 
 const skills = [
   {
