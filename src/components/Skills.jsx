@@ -1,6 +1,6 @@
 import React from "react";
-import Head from "../components/Head";
-import Foter from "../components/Foter";
+import Header from "../components/Head"; // Head.jsx = Header
+import Footer from "../components/Foter"; // Foter.jsx = Footer
 
 const skills = [
   {
@@ -100,12 +100,12 @@ const ProfilePage = () => {
     <>
       <Header />
 
-      <main className="text-black  mt-12 flex flex-col items-center justify-center min-h-screen px-4 py-10 bg-[#0e1525]">
-        <h1 className="text-3xl md:text-4xl font-bold mb-3">
+      <main className="text-black mt-12 flex flex-col items-center justify-center min-h-screen px-4 py-10 bg-[#0e1525]">
+        <h1 className="text-3xl md:text-4xl font-bold mb-3 text-white">
           Muhammad Ahmad Fridi
         </h1>
 
-        <p className="text-center text-gray-800 max-w-2xl mb-10">
+        <p className="text-center text-gray-300 max-w-2xl mb-10">
           I'm a passionate developer with hands-on experience in both front-end
           and backend technologies. Skilled in HTML, CSS, JavaScript, React,
           React Native, Firebase and more. Always eager to learn and build
