@@ -96,10 +96,6 @@ export default function AboutMe() {
                 />
               </div>
             </div>
-
-            <p className="text-red-700 font-semibold mt-6">
-              🚀 Now working towards becoming a Future Full Stack Developer
-            </p>
           </div>
         </div>
 
