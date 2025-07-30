@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../images/img211.png";
 import Header from "../components/Head";
 import Foter from "../components/Foter";
 
@@ -88,19 +87,28 @@ const skills = [
     color: "bg-orange-100",
     titleColor: "text-black",
   },
+  {
+    title: "MongoDB",
+    logo: "https://cdn-icons-png.flaticon.com/512/528/528101.png",
+    description: "NoSQL database for modern apps",
+    color: "bg-green-200",
+    titleColor: "text-black",
+  },
+  {
+    title: "Node.js",
+    logo: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
+    description: "JavaScript runtime for backend",
+    color: "bg-lime-100",
+    titleColor: "text-black",
+  },
 ];
 
 const ProfilePage = () => {
   return (
     <>
       <Header />
-      <div className="h-full bg-[#0e1f40] flex flex-col mt-15 items-center p-5 md:p-10 text-white">
-        <img
-          src={img1}
-          alt="Muhammad Ahmad Fridi"
-          className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mb-4 shadow-lg border-4 border-white"
-        />
 
+      <div className="text-white flex flex-col items-center justify-center min-h-screen px-4 py-10">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Muhammad Ahmad Fridi
         </h1>
@@ -136,6 +144,7 @@ const ProfilePage = () => {
           </div>
         </section>
       </div>
+
       <div className="mt-22">
         <Foter />
       </div>
