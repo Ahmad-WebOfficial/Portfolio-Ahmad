@@ -95,17 +95,17 @@ const skills = [
     titleColor: "text-black",
   },
   {
-    title: "Git & GitHub",
-    logo: "https://cdn-icons-png.flaticon.com/512/1051/1051326.png",
-    description: "Version control & code hosting",
-    color: "bg-red-100",
+    title: "API",
+    logo: "https://cdn-icons-png.flaticon.com/512/595/595655.png",
+    description: "Connect services with REST APIs",
+    color: "bg-blue-50",
     titleColor: "text-black",
   },
   {
-    title: "RESTful APIs",
-    logo: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png",
-    description: "Build and consume web APIs",
-    color: "bg-blue-200",
+    title: "GitHub",
+    logo: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+    description: "Version control and collaboration",
+    color: "bg-gray-100",
     titleColor: "text-black",
   },
 ];
@@ -113,18 +113,20 @@ const skills = [
 const ProfilePage = () => {
   return (
     <>
-      <Header />
+      <div className="mt-16">
+        <Header />
+      </div>
 
-      <div className="text-black flex mt-12 flex-col items-center justify-center min-h-screen px-4 py-10">
+      <div className="text-white mt-12 flex flex-col items-center justify-center min-h-screen px-4 py-10">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Muhammad Ahmad Fridi
         </h1>
 
-        <p className="text-center text-gray-900 max-w-2xl mb-10">
-          I'm a passionate full stack developer with hands-on experience in both front-end
-          and backend. Skilled in HTML, CSS, JavaScript, React,
-          React Native, Firebase, Node js and MongoDB . Always eager to learn and build
-          modern web.
+        <p className="text-center text-gray-300 max-w-2xl mb-10">
+          I'm a passionate developer with hands-on experience in both front-end
+          and backend technologies. Skilled in HTML, CSS, JavaScript, React,
+          React Native, Firebase and more. Always eager to learn and build
+          modern web and mobile apps.
         </p>
 
         <section className="w-full max-w-6xl bg-[#162039] rounded-lg py-6 px-4 md:px-10">
@@ -152,7 +154,7 @@ const ProfilePage = () => {
         </section>
       </div>
 
-      <div className="mt-22">
+      <div className="mt-24">
         <Foter />
       </div>
     </>
