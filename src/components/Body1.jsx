@@ -11,7 +11,8 @@ const HeroSection = () => {
   return (
     <div className="relative">
       <div className="flex flex-col md:flex-row items-center justify-between lg:p-30 px-8 py-16 bg-[#1b263b] min-h-screen">
-        <div className="text-left space-y-4 md:w-[40rem]"> {/* updated md:w-166 */}
+        {/* Left Side */}
+        <div className="text-left space-y-4 md:w-[40rem]">
           <h1 className="text-5xl font-bold text-black">Muhammad Ahmad Fridi</h1>
           <h2 className="text-xl text-green-500 lg:text-2xl font-semibold">
             Full Stack Developer
@@ -26,17 +27,19 @@ const HeroSection = () => {
           </Link>
         </div>
 
+        {/* Right Side Image */}
         <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center">
           <img
             loading="lazy"
             alt="Click to enlarge Muhammad Ahmad Fridi"
             src={img22}
             onClick={openModal}
-            className="cursor-pointer w-65 h-65 md:w-82 md:h-82 rounded-full object-contain object-top mb-4 shadow-lg border-4 border-white"
+            className="cursor-pointer w-64 h-64 md:w-80 md:h-80 rounded-full object-contain object-top mb-4 shadow-lg border-4 border-white"
           />
         </div>
       </div>
 
+      {/* Modal */}
       {isModalOpen && (
         <div
           className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center"
