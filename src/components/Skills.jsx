@@ -115,7 +115,7 @@ const ProfilePage = () => {
     <>
       <Header />
 
-      <div className="text-black flex mt-10 flex-col items-center justify-center min-h-screen px-4 py-10">
+      <div className="text-black flex mt-12 flex-col items-center justify-center min-h-screen px-4 py-10">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Muhammad Ahmad Fridi
         </h1>
