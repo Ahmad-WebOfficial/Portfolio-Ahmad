@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Head";
-import Footer from "../components/Footer"; // ✅ Corrected this line (was: Foter)
+import Footer from "../components/Footer"; 
 
 const skills = [
   {
@@ -155,7 +155,7 @@ const ProfilePage = () => {
       </div>
 
       <div className="mt-24">
-        <Footer /> {/* ✅ Fixed spelling */}
+        <Footer /> 
       </div>
     </>
   );
