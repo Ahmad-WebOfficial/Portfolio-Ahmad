@@ -29,9 +29,9 @@ const Contact = () => {
     setLoading(true);
 
     const data = new FormData();
-    for (let key in formData) {
-      data.append(key, formData[key]);
-    }
+    Object.entries(formData).forEach(([key, value]) => {
+      data.append(key, value);
+    });
     if (file) {
       data.append("file", file);
     }
@@ -49,7 +49,8 @@ const Contact = () => {
       } else {
         alert("❌ Failed to submit. Please try again.");
       }
-    } catch {
+    } catch (err) {
+      console.error(err);
       alert("❌ Error sending message. Please try again.");
     }
 
@@ -59,30 +60,16 @@ const Contact = () => {
   return (
     <>
       <Head />
-      <div className="h-full bg-[#0d1d39] flex flex-col mt-15 items-center p-5 md:p-10 text-white">
-        <h1 className="text-3xl md:text-4xl font-bold mb-3">
-          Muhammad Ahmad Fridi
-        </h1>
-        <p className="text-center text-gray-300 max-w-2xl mb-3">
-          I'm always open to new ideas and exciting challenges.
-        </p>
-        <p className="text-center text-gray-300 max-w-2xl mb-10">
-          I’m always excited to collaborate on meaningful projects, explore new
-          ideas, and connect with like-minded individuals. Whether you have a
-          question, a project proposal, or just want to say hello — feel free to
-          reach out!
-        </p>
-      </div>
 
-      <section className="bg-[#c9d8a0] py-10 md:py-[16rem] px-5 md:flex md:justify-between md:items-center md:gap-10 md:px-12">
+      <section className="bg-[#c9d8a0] py-10 px-5 md:flex md:justify-between md:items-center md:gap-10 md:px-12">
         <div className="md:w-1/2">
           <p className="text-[1.5rem] font-serif md:text-[2rem]">
             Feel free to reach out for collaboration or project inquiries!
           </p>
 
-          <p className="mt-10 md:mt-8 font-serif text-[1.1rem]">Follow Me</p>
+          <p className="mt-10 font-serif text-[1.1rem]">Follow Me</p>
 
-          <div className="hidden min-[300px]:flex space-x-4 text-black mt-4">
+          <div className="flex space-x-4 text-black mt-4">
             <a
               href="https://www.linkedin.com/in/muhammad-ahmad-fridi-b4780035a/"
               target="_blank"
@@ -119,7 +106,7 @@ const Contact = () => {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -128,11 +115,11 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="example@domain.com"
                 required
+                placeholder="example@domain.com"
                 value={formData.email}
                 onChange={handleChange}
-                className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -143,7 +130,7 @@ const Contact = () => {
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="p-3 border border-gray-300 rounded-lg h-[10rem] focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+                className="p-3 border border-gray-300 rounded-lg h-[10rem] focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -161,7 +148,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={loading}
-              className="bg-black text-white rounded-full w-[7rem] py-2 hover:cursor-pointer disabled:opacity-60"
+              className="bg-black text-white rounded-full w-[7rem] py-2 disabled:opacity-60"
             >
               {loading ? "Sending..." : "Submit"}
             </button>
