@@ -86,14 +86,14 @@ const Contact = () => {
               <FaGithub className="hover:text-gray-800 text-3xl" />
             </a>
             <a
-              href="https://www.upwork.com/freelancers/~01a123456789abcdef"
+              href="https://www.upwork.com/freelancers/~your-upwork-profile-id"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaUpwork className="hover:text-green-600 text-3xl" />
             </a>
             <a
-              href="https://www.fiverr.com/ahmadfridi"
+              href="https://www.fiverr.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
             >
