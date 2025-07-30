@@ -1,129 +1,47 @@
-import React, { useState } from "react";
-import img2 from "../images/nexcent.jpg";  
-import img3 from "../images/news.jpg";     
-import img4 from "../images/Graph.jpg";     
-import img5 from "../images/Clean.jpg";     
-import img6 from "../images/fashion.jpg";     
-import img7 from "../images/api.jpg";     
-import img8 from "../images/clock.jpg";     
-import img9 from "../images/todo.jpg";  
-import img10 from "../images/books.jpg";     
+import React from "react";
+import { FaLaptopCode, FaServer, FaCogs } from "react-icons/fa";
 
-
-import img1 from "../images/img55.jpg";     
-import Head from "../components/Head";
-import Foter from "../components/Foter";
-
-const ProjectManager = () => {
-  const [projects] = useState([
-    {
-      name: "Nexcent",
-      url: "https://perfect-nexcent.vercel.app/",
-      image: img2,
-    },
-       {
-      name: "Nexus News",
-      url: "https://perfect-news.vercel.app/",
-      image: img3,
-    },
-    {
-      name: "Graph Chart",
-      url: "https://perfect-graphs.vercel.app/",
-      image: img4,
-    },
-    {
-      name: "Cleaning App",
-      url: "https://wix-cleanic-project.vercel.app/",
-      image: img5,
-    },
-     {
-      name: "Mejiwoo Fashion",
-      url: "https://mejiwoo-fashion-project.vercel.app/",
-      image: img6,
-    },
-     {
-      name: "Api Product",
-      url: "https://perfect-product-api.vercel.app/",
-      image: img7,
-    },
-    {
-      name: "Digital Clock",
-      url: "https://perfect-clock-ten.vercel.app/",
-      image: img8,
-    },
-        {
-      name: "To Do App",
-      url: "https://perfect-todo-iota.vercel.app/",
-      image: img9,
-    },
-{
-      name: "Perfect Books",
-      url: "https://perfect-books.vercel.app/",
-      image: img10,
-    },
-
-    
-  ]);
-
+const DevStackSection = () => {
   return (
-    <>
-      <div className="mt-15">
-        <Head />
+    <div className="bg-gray-900 min-h-screen flex flex-col items-center justify-center px-4 py-16 text-white">
+      <h1 className="text-4xl font-bold mb-10 text-center">Full Stack Developer</h1>
+
+      <div className="flex flex-col md:flex-row items-center gap-10">
+        {/* Frontend */}
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300 text-center">
+          <FaLaptopCode className="text-5xl text-blue-400 mb-4 mx-auto" />
+          <h2 className="text-xl font-semibold">Frontend</h2>
+          <p className="text-sm mt-2 text-gray-300">
+            HTML, CSS, JavaScript, React, Tailwind
+          </p>
+        </div>
+
+        {/* "+" Icon */}
+        <div className="text-4xl font-bold text-green-400">+</div>
+
+        {/* Backend */}
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300 text-center">
+          <FaServer className="text-5xl text-yellow-400 mb-4 mx-auto" />
+          <h2 className="text-xl font-semibold">Backend</h2>
+          <p className="text-sm mt-2 text-gray-300">
+            Node.js, Express, MongoDB, APIs
+          </p>
+        </div>
+
+        {/* "=" Icon */}
+        <div className="text-4xl font-bold text-green-400">=</div>
+
+        {/* Full Stack */}
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300 text-center">
+          <FaCogs className="text-5xl text-purple-400 mb-4 mx-auto" />
+          <h2 className="text-xl font-semibold">Full Stack</h2>
+          <p className="text-sm mt-2 text-gray-300">
+            Complete Web Solutions
+          </p>
+        </div>
       </div>
-
-      <div className="h-full bg-[#1a282e] flex flex-col mt-15 items-center p-5 md:p-10 text-white">
-        <img
-          src={img1}
-          alt="Muhammad Ahmad Fridi"
-          className="w-40 h-40 md:w-48 md:h-48 rounded-full object-contain mb-4 shadow-lg border-4 border-white"
-        />
-
-        <h1 className="text-3xl md:text-4xl font-bold mb-3">
-          Muhammad Ahmad Fridi
-        </h1>
-
-        <p className="text-center text-gray-300 max-w-2xl mb-10">
-          I am Muhammad Ahmad Fridi, a passionate Frontend Developer dedicated
-          to building modern, responsive, and user-friendly websites. I have
-          successfully completed multiple projects in web development using
-          React, Tailwind CSS, and JavaScript. Many more projects are in
-          progress, as I continue to learn and grow in this fast-moving tech
-          world. My mission is to create impactful digital experiences that
-          solve real-world problems.
-        </p>
-      </div>
-
-      <div className="min-h-screen bg-gray-900 text-white p-8 flex flex-col items-center">
-        <h1 className="text-3xl font-bold mb-8">Project Manager</h1>
-
-        <ul className="w-full max-w-md space-y-4">
-          {projects.map((project, i) => (
-            <li
-              key={i}
-              className="flex items-center space-x-4 bg-gray-800 p-4 rounded-lg hover:bg-green-700 transition cursor-pointer"
-              onClick={() => {
-                if (project.url && project.url !== "#") {
-                  window.open(project.url, "_blank");
-                }
-              }}
-              title={`Open ${project.name}`}
-            >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-53 h-30 object-contain rounded-sm border-2 border-white"
-              />
-              <span className="text-lg font-semibold">{project.name}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="mt-25">
-        <Foter />
-      </div>
-    </>
+    </div>
   );
 };
 
-export default ProjectManager;
+export default DevStackSection;
