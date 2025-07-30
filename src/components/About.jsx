@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img1 from "../images/img33.jpg";
+import img1 from "../images/ahmadfridi.jpg";
 import { DiCodeigniter } from "react-icons/di";
 import { SiProtonmail } from "react-icons/si";
 import { MdDeveloperMode } from "react-icons/md";
