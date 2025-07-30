@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaUpwork } from "react-icons/fa";
+import { SiFiverr } from "react-icons/si";
 
 import Head from "../components/Head";
 import Foter from "../components/Foter";
@@ -61,7 +62,7 @@ const Contact = () => {
     <>
       <Head />
 
-      <section className="bg-[#c9d8a0] py-10 px-5 mt-12 md:flex md:justify-between md:items-center md:gap-10 md:px-12">
+      <section className="bg-[#c9d8a0] py-10 px-5 mt-14 md:flex md:justify-between md:items-center md:gap-10 md:px-12">
         <div className="md:w-1/2">
           <p className="text-[1.5rem] font-serif md:text-[2rem]">
             Feel free to reach out for collaboration or project inquiries!
@@ -82,7 +83,21 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="hover:text-blue-600 text-3xl" />
+              <FaGithub className="hover:text-gray-800 text-3xl" />
+            </a>
+            <a
+              href="https://www.fiverr.com/users/ahmadfridi/seller_dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaUpwork className="hover:text-green-600 text-3xl" />
+            </a>
+            <a
+              href="https://www.upwork.com/nx/find-work/best-matches"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiFiverr className="hover:text-green-500 text-3xl" />
             </a>
           </div>
         </div>
