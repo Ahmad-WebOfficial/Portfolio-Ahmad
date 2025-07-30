@@ -1,62 +1,47 @@
-import React, { useState } from "react";
+import React from "react";
+import { FaLaptopCode, FaServer, FaCogs } from "react-icons/fa";
 
-const About = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const webProjects = [
-    { name: "Nexcent", url: "https://perfect-nexcent.vercel.app/" },
-    { name: "Nexus News", url: "https://perfect-news.vercel.app/" },
-    { name: "Nexus Shop", url: "https://perfect-shop-ecommerce.vercel.app/" },
-    { name: "Weather App", url: "https://perfect-weather-api.vercel.app/" },
-  ];
-
-  const creativeProjects = [
-    { name: "YouTube Website", url: "https://perfect-youtube.vercel.app/" },
-    { name: "Live TV Streaming", url: "https://perfect-live-tv.vercel.app/" },
-    { name: "Image Generator", url: "https://perfect-image.vercel.app/" },
-    { name: "Text to Voice", url: "https://perfect-voice.vercel.app/" },
-  ];
-
-  const handleDotClick = (index) => {
-    setActiveIndex(index);
-  };
-
-  const currentProjects = activeIndex === 0 ? webProjects : creativeProjects;
-
+const DevStackSection = () => {
   return (
-    <div className="p-8 bg-gray-100 min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold mb-6">My Projects</h1>
+    <div className="bg-gray-900 min-h-screen flex flex-col items-center justify-center px-4 py-16 text-white">
+      <h1 className="text-4xl font-bold mb-10 text-center">Full Stack Developer</h1>
 
-      <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4">
-        {currentProjects.map((project, index) => (
-          <a
-            key={index}
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white p-4 rounded shadow hover:shadow-lg"
-            title={`Open ${project.name}`}
-          >
-            <h3 className="text-lg font-semibold">{project.name}</h3>
-            <p className="text-blue-500 truncate">{project.url}</p>
-          </a>
-        ))}
-      </div>
+      <div className="flex flex-col md:flex-row items-center gap-10">
+        {/* Frontend */}
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300 text-center">
+          <FaLaptopCode className="text-5xl text-blue-400 mb-4 mx-auto" />
+          <h2 className="text-xl font-semibold">Frontend</h2>
+          <p className="text-sm mt-2 text-gray-300">
+            HTML, CSS, JavaScript, React, Tailwind
+          </p>
+        </div>
 
-      {/* Dot Navigation */}
-      <div className="flex mt-6 space-x-4">
-        {[0, 1].map((index) => (
-          <button
-            key={index}
-            onClick={() => handleDotClick(index)}
-            className={`h-3 w-3 rounded-full ${
-              index === activeIndex ? "bg-green-400" : "bg-white border border-gray-400"
-            }`}
-          ></button>
-        ))}
+        {/* "+" Icon */}
+        <div className="text-4xl font-bold text-green-400">+</div>
+
+        {/* Backend */}
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300 text-center">
+          <FaServer className="text-5xl text-yellow-400 mb-4 mx-auto" />
+          <h2 className="text-xl font-semibold">Backend</h2>
+          <p className="text-sm mt-2 text-gray-300">
+            Node.js, Express, MongoDB, APIs
+          </p>
+        </div>
+
+        {/* "=" Icon */}
+        <div className="text-4xl font-bold text-green-400">=</div>
+
+        {/* Full Stack */}
+        <div className="bg-gray-800 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300 text-center">
+          <FaCogs className="text-5xl text-purple-400 mb-4 mx-auto" />
+          <h2 className="text-xl font-semibold">Full Stack</h2>
+          <p className="text-sm mt-2 text-gray-300">
+            Complete Web Solutions
+          </p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default DevStackSection;
