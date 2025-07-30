@@ -59,8 +59,7 @@ const Contact = () => {
   return (
     <>
       <Head />
-      <div className="h-full bg-[#0d1d39] flex  flex-col mt-15 items-center p-5 md:p-10 text-white">
-        
+      <div className="h-full bg-[#0d1d39] flex flex-col mt-15 items-center p-5 md:p-10 text-white">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Muhammad Ahmad Fridi
         </h1>
@@ -110,7 +109,7 @@ const Contact = () => {
 
           <form
             onSubmit={handleSubmit}
-            className="max-w-xl mx-auto p-4 flex flex-col gap-4  bg-white shadow-lg rounded-2xl py-10"
+            className="max-w-xl mx-auto p-4 flex flex-col gap-4 bg-white shadow-lg rounded-2xl py-10"
           >
             <div className="flex flex-col">
               <label className="py-2 px-1 font-medium">Enter Name *</label>
@@ -169,8 +168,10 @@ const Contact = () => {
           </form>
         </div>
       </section>
-<div className="mt-25">      <Foter />
-</div>
+
+      <div className="mt-25">
+        <Foter />
+      </div>
     </>
   );
 };
