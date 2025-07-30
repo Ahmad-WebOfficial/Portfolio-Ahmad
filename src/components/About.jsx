@@ -41,13 +41,12 @@ export default function AboutMe() {
             </p>
             <p className="text-green-700 font-medium">
               💼 I am an expert in <strong>Web Development</strong>. I build
-              responsive, user-friendly websites and web apps with clean UI
+              responsive, user-friendly websites with clean UI
               and strong performance.
             </p>
             <p className="text-gray-700 text-lg font-medium">🇵🇰 Pakistan</p>
 
             <div className="space-y-6 mt-8">
-              {/* Matric */}
               <div className="flex items-center gap-6">
                 <div className="flex-1 flex items-center gap-2">
                   <FaSchool className="text-green-700 text-xl" />
@@ -56,14 +55,13 @@ export default function AboutMe() {
                   </p>
                 </div>
                 <img
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqZQc8EbcVH-e_iiG8ALrY7Zy9i5R6MURfND_MXl-ZPDuMbxF74it7tADBpYkATEUyJMv5KMBmpA781r3YD5X-jo0XwKCTljJG6UOt4-6SAJcXeI1fRWmwXl3oI7lDlFpgs5c1ESA=s1360-w1360-h1020-rw"
+                  src="https://scontent.fisb22-1.fna.fbcdn.net/v/t39.30808-6/307331254_482457180563285_7413769522948618636_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=MpvytpiW2UoQ7kNvwGH4JOg&_nc_oc=Adk-eCm4vdpLiLzBHlAHnMIQ31tUZjoWNht9bw9SY1lBBvLFAP6SHb7KHzLfuBx2h5Y&_nc_zt=23&_nc_ht=scontent.fisb22-1.fna&_nc_gid=PakyhaDuQv9kGOrw3evG8w&oh=00_AfR4a5Q1STGu2jnjGhHzHYRAYpdbetU_y7LH0Drc1VepqQ&oe=688FA766"
                   alt="Govt High School"
                   className="w-40 rounded shadow cursor-pointer"
                   onClick={() => openModal("https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqZQc8EbcVH-e_iiG8ALrY7Zy9i5R6MURfND_MXl-ZPDuMbxF74it7tADBpYkATEUyJMv5KMBmpA781r3YD5X-jo0XwKCTljJG6UOt4-6SAJcXeI1fRWmwXl3oI7lDlFpgs5c1ESA=s1360-w1360-h1020-rw")}
                 />
               </div>
 
-              {/* FSc */}
               <div className="flex items-center gap-6">
                 <div className="flex-1 flex items-center gap-2">
                   <FaUniversity className="text-green-700 text-xl" />
@@ -81,7 +79,6 @@ export default function AboutMe() {
                 />
               </div>
 
-              {/* Graduation */}
               <div className="flex items-center gap-6">
                 <div className="flex-1 flex items-center gap-2">
                   <PiStudentFill className="text-green-700 text-xl" />
@@ -106,14 +103,12 @@ export default function AboutMe() {
           </div>
         </div>
 
-        {/* Creative Process */}
         <div className="mt-24">
           <h2 className="text-2xl text-center font-bold lg:text-3xl text-green-900">
             My Creative Process
           </h2>
 
           <div className="mt-10 lg:grid lg:grid-cols-3 lg:gap-8">
-            {/* Step 1 */}
             <div className="flex flex-col items-start lg:items-center">
               <div className="flex items-center gap-3 lg:flex-col">
                 <DiCodeigniter className="text-2xl lg:text-3xl text-red-600" />
@@ -124,7 +119,6 @@ export default function AboutMe() {
               </p>
             </div>
 
-            {/* Step 2 */}
             <div className="flex flex-col items-start mt-8 lg:items-center lg:mt-0">
               <div className="flex items-center gap-3 lg:flex-col">
                 <SiProtonmail className="text-2xl lg:text-3xl text-green-700" />
@@ -135,7 +129,6 @@ export default function AboutMe() {
               </p>
             </div>
 
-            {/* Step 3 */}
             <div className="flex flex-col items-start mt-8 lg:items-center lg:mt-0">
               <div className="flex items-center gap-3 lg:flex-col">
                 <MdDeveloperMode className="text-2xl lg:text-3xl text-cyan-400" />
@@ -149,7 +142,6 @@ export default function AboutMe() {
         </div>
       </div>
 
-      {/* Modal */}
       {modalImg && (
         <div
           onClick={closeModal}
