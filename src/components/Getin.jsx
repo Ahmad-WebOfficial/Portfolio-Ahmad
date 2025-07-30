@@ -169,7 +169,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <div className="mt-25">
+      <div className="mt-24">
         <Foter />
       </div>
     </>
