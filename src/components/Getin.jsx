@@ -3,7 +3,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import Head from "../components/Head";
 import Foter from "../components/Foter";
-import img1 from "../images/img411.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -61,11 +60,7 @@ const Contact = () => {
     <>
       <Head />
       <div className="h-full bg-[#0d1d39] flex  flex-col mt-15 items-center p-5 md:p-10 text-white">
-        <img
-          src={img1}
-          alt="Muhammad Ahmad Fridi"
-          className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover object-top mb-4 shadow-lg border-4 border-white"
-        />
+        
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Muhammad Ahmad Fridi
         </h1>
