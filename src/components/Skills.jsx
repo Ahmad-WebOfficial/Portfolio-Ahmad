@@ -115,12 +115,12 @@ const ProfilePage = () => {
     <>
       <Header />
 
-      <div className="text-black flex flex-col items-center justify-center min-h-screen px-4 py-10">
+      <div className="text-black flex mt-8 flex-col items-center justify-center min-h-screen px-4 py-10">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Muhammad Ahmad Fridi
         </h1>
 
-        <p className="text-center text-gray-300 max-w-2xl mb-10">
+        <p className="text-center text-gray-900 max-w-2xl mb-10">
           I'm a passionate full stack developer with hands-on experience in both front-end
           and backend. Skilled in HTML, CSS, JavaScript, React,
           React Native, Firebase, Node js and MongoDB . Always eager to learn and build
