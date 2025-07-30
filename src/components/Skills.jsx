@@ -81,13 +81,6 @@ const skills = [
     titleColor: "text-black",
   },
   {
-    title: "Kotlin Basic",
-    logo: "https://cdn-icons-png.flaticon.com/512/919/919832.png",
-    description: "Kotlin for Android apps",
-    color: "bg-orange-100",
-    titleColor: "text-black",
-  },
-  {
     title: "MongoDB",
     logo: "https://cdn-icons-png.flaticon.com/512/528/528101.png",
     description: "NoSQL database for modern apps",
@@ -101,6 +94,20 @@ const skills = [
     color: "bg-lime-100",
     titleColor: "text-black",
   },
+  {
+    title: "Git & GitHub",
+    logo: "https://cdn-icons-png.flaticon.com/512/1051/1051326.png",
+    description: "Version control & code hosting",
+    color: "bg-red-100",
+    titleColor: "text-black",
+  },
+  {
+    title: "RESTful APIs",
+    logo: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png",
+    description: "Build and consume web APIs",
+    color: "bg-blue-200",
+    titleColor: "text-black",
+  },
 ];
 
 const ProfilePage = () => {
@@ -108,16 +115,16 @@ const ProfilePage = () => {
     <>
       <Header />
 
-      <div className="text-white flex flex-col items-center justify-center min-h-screen px-4 py-10">
+      <div className="text-black flex flex-col items-center justify-center min-h-screen px-4 py-10">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Muhammad Ahmad Fridi
         </h1>
 
         <p className="text-center text-gray-300 max-w-2xl mb-10">
-          I'm a passionate developer with hands-on experience in both front-end
-          and mobile technologies. Skilled in HTML, CSS, JavaScript, React,
-          React Native, Firebase and more. Always eager to learn and build
-          modern web and mobile apps.
+          I'm a passionate full stack developer with hands-on experience in both front-end
+          and backend. Skilled in HTML, CSS, JavaScript, React,
+          React Native, Firebase, Node js and MongoDB . Always eager to learn and build
+          modern web.
         </p>
 
         <section className="w-full max-w-6xl bg-[#162039] rounded-lg py-6 px-4 md:px-10">
