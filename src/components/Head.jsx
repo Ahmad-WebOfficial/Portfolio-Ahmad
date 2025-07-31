@@ -50,6 +50,13 @@ const Header = () => {
           >
             <FaGithub className="hover:text-white text-lg" />
           </a>
+          <a
+              href="https://www.fiverr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiFiverr  className="hover:text-gray-800 -mt-4 text-6xl" />
+            </a>
         </div>
 
         <div className="min-[400px]:hidden">
