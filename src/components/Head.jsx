@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiFiverr } from "react-icons/si";
-
+import { FaUpwork } from "react-icons/fa6";
 import { HiMenu, HiX } from "react-icons/hi";
 import logo from "../images/img555.jpg"; 
 
@@ -57,7 +57,14 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiFiverr  className="hover:text-gray-800 -mt-4 text-6xl" />
+              <SiFiverr  className="hover:text-gray-800  text-6xl" />
+            </a>
+          <a
+              href="https://www.upwork.com/nx/find-work/best-matches"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaUpwork  className="hover:text-gray-800 text-4xl" />
             </a>
         </div>
 
