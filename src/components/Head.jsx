@@ -57,14 +57,14 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiFiverr  className="hover:text-gray-800  text-6xl" />
+              <SiFiverr  className="hover:text-gray-800 -mt-4  text-3xl" />
             </a>
           <a
               href="https://www.upwork.com/nx/find-work/best-matches"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaUpwork  className="hover:text-gray-800 text-4xl" />
+              <FaUpwork  className="hover:text-gray-800 text-3xl" />
             </a>
         </div>
 
