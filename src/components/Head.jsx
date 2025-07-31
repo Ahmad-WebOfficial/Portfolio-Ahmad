@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiFiverr } from "react-icons/si";
+
 import { HiMenu, HiX } from "react-icons/hi";
 import logo from "../images/img555.jpg"; 
 
