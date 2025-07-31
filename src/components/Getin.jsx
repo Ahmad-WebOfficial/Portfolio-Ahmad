@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaUpwork } from "react-icons/fa6";
+import { SiFiverr } from "react-icons/si";
+
 import Head from "../components/Head";
 import Foter from "../components/Foter";
 
@@ -76,6 +79,24 @@ const Contact = () => {
             >
               <FaGithub className="hover:text-gray-800 text-3xl" />
             </a>
+
+
+            <a
+              href="https://www.fiverr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiFiverr  className="hover:text-gray-800 -mt-4 text-6xl" />
+            </a>
+
+<a
+              href="https://www.upwork.com/nx/find-work/best-matches"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaUpwork  className="hover:text-gray-800 text-4xl" />
+            </a>
+
           </div>
         </div>
 
