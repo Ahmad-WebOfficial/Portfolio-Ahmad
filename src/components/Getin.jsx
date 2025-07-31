@@ -1,17 +1,10 @@
 import React, { useState } from "react";
-import { FaLinkedin, FaGithub, FaUpwork } from "react-icons/fa";
-import { SiFiverr } from "react-icons/si";
-
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Head from "../components/Head";
 import Foter from "../components/Foter";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [file, setFile] = useState(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -30,9 +23,7 @@ const Contact = () => {
     setLoading(true);
 
     const data = new FormData();
-    Object.entries(formData).forEach(([key, value]) => {
-      data.append(key, value);
-    });
+    Object.entries(formData).forEach(([key, value]) => data.append(key, value));
     if (file) {
       data.append("file", file);
     }
@@ -53,9 +44,9 @@ const Contact = () => {
     } catch (err) {
       console.error(err);
       alert("❌ Error sending message. Please try again.");
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   };
 
   return (
@@ -84,20 +75,6 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               <FaGithub className="hover:text-gray-800 text-3xl" />
-            </a>
-            <a
-              href="https://www.upwork.com/freelancers/~01ab35b22b6beeeacb"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaUpwork className="hover:text-green-600 text-3xl" />
-            </a>
-            <a
-              href="https://www.fiverr.com/ahmadfridi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiFiverr className="hover:text-green-500 text-3xl" />
             </a>
           </div>
         </div>
@@ -150,9 +127,7 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col">
-              <label className="py-2 px-1 font-medium">
-                Attach a File (optional)
-              </label>
+              <label className="py-2 px-1 font-medium">Attach a File (optional)</label>
               <input
                 type="file"
                 onChange={handleFileChange}
