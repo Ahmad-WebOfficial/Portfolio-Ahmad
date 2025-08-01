@@ -2,6 +2,10 @@ import React from "react";
 import img1 from "../images/img77.jpg";
 import imgNews from "../images/news.jpg";
 import imgClock from "../images/clock.jpg";
+import books from "../images/books.jpg";
+import nexcent from "../images/nexcent.jpg";
+
+
 import Head from "../components/Head";
 import Foter from "../components/Foter";
 
@@ -17,6 +21,17 @@ const ProjectManager = () => {
       url: "https://perfect-clock-ten.vercel.app/",
       image: imgClock,
     },
+    {
+      name: "Nexcent",
+      url: "https://perfect-nexcent.vercel.app/",
+      image: nexcent,
+    },
+{
+      name: "Books",
+      url: "https://perfect-books.vercel.app/",
+      image: books,
+    },
+    
   ];
 
   return (
@@ -65,7 +80,7 @@ const ProjectManager = () => {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-20 h-20 object-cover rounded-lg border border-gray-700"
+                  className="w-30 h-30 object-cover rounded-lg border border-gray-700"
                 />
                 <span className="text-lg font-semibold text-white">
                   {project.name}
