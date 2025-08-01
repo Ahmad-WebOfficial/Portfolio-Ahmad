@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import img1 from "../images/img77.jpg";
-import bookImage from "../images/book.jpg"; // 👈 import default image
+import bookImage from "../images/books.jpg"; // 👈 import default image
 import Head from "../components/Head";
 import Foter from "../components/Foter";
 
