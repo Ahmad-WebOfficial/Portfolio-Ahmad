@@ -1,7 +1,7 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaUpwork } from "react-icons/fa";
+import { SiFiverr } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -64,31 +64,34 @@ const Footer = () => {
         </ul>
 
         <ul className="flex justify-center md:justify-end gap-5">
-          <a href="https://github.com/Ahmad-WebOfficial" target="_blank">
+          <a
+            href="https://github.com/Ahmad-WebOfficial"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub className="text-[1.3rem] md:text-[1.4rem]" />
           </a>
           <a
             href="https://www.linkedin.com/in/muhammad-ahmad-fridi-b4780035a/"
-            target="_blank "
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedinIn className="text-[1.3rem] md:text-[1.4rem]" />
           </a>
-
-<a
-              href="https://www.fiverr.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiFiverr  className=" -mt-2  text-[1.3rem] md:text-[1.4rem" />
-            </a>
           <a
-              href="https://www.upwork.com/nx/find-work/best-matches"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaUpwork  className="text-[1.3rem] md:text-[1.4rem" />
-            </a>
-          
+            href="https://www.fiverr.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiFiverr className="-mt-2 text-[1.3rem] md:text-[1.4rem]" />
+          </a>
+          <a
+            href="https://www.upwork.com/nx/find-work/best-matches"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaUpwork className="text-[1.3rem] md:text-[1.4rem]" />
+          </a>
         </ul>
       </div>
 
