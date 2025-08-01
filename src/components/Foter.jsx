@@ -84,7 +84,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiFiverr  className=" -mt-1 text-5xl" />
+              <SiFiverr  className=" -mt-1.5 text-5xl" />
             </a>
           <a
               href="https://www.upwork.com/nx/find-work/best-matches"
