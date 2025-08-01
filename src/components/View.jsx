@@ -4,6 +4,8 @@ import imgNews from "../images/news.jpg";
 import imgClock from "../images/clock.jpg";
 import books from "../images/books.jpg";
 import nexcent from "../images/nexcent.jpg";
+import graph from "../images/Graph.jpg";
+import api from "../images/api.jpg";
 
 
 import Head from "../components/Head";
@@ -22,16 +24,25 @@ const ProjectManager = () => {
       image: imgClock,
     },
     {
-      name: "Nexcent",
+      name: "Nexcent Project",
       url: "https://perfect-nexcent.vercel.app/",
       image: nexcent,
     },
 {
-      name: "Books",
+      name: "Books  Porject",
       url: "https://perfect-books.vercel.app/",
       image: books,
     },
-    
+    {
+      name: "Grphs Project",
+      url: "https://perfect-graphs.vercel.app/",
+      image: graph,
+    },
+    {
+      name: "API Project",
+      url: "https://perfect-product-api.vercel.app/",
+      image: api,
+    },
   ];
 
   return (
@@ -80,7 +91,7 @@ const ProjectManager = () => {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-30 h-30 object-cover rounded-lg border border-gray-700"
+                  className="w-40 h-40 object-cover rounded-lg border border-gray-700"
                 />
                 <span className="text-lg font-semibold text-white">
                   {project.name}
