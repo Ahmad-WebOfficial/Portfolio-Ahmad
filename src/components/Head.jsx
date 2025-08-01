@@ -23,16 +23,16 @@ const Header = () => {
           <Link to="/" className="hover:text-white">
             Home
           </Link>
-          <Link to="/skills" className="hover:text-white">
+          <Link to="/skills" className="hover:text-red-600">
             Skills
           </Link>
-          <Link to="/projects" className="hover:text-white">
+          <Link to="/projects" className="hover:text-red-600">
             Project View
           </Link>
-          <Link to="/about" className="hover:text-white">
+          <Link to="/about" className="hover:text-red-600">
             About Us
           </Link>
-          <Link to="/contact" className="hover:text-white">
+          <Link to="/contact" className="hover:text-red-600">
             Get in Touch
           </Link>
         </nav>
@@ -43,28 +43,28 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="hover:text-white text-lg" />
+            <FaLinkedin className="hover:text-gray-600  text-lg" />
           </a>
           <a
             href="https://github.com/Ahmad-WebOfficial"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="hover:text-white text-lg" />
+            <FaGithub className="hover:text-gray-600  text-lg" />
           </a>
           <a
               href="https://www.fiverr.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiFiverr  className="hover:text-gray-800 -mt-2  text-4xl" />
+              <SiFiverr  className="hover:text-gray-600 -mt-2  text-4xl" />
             </a>
           <a
               href="https://www.upwork.com/nx/find-work/best-matches"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaUpwork  className="hover:text-gray-800 text-2xl" />
+              <FaUpwork  className="hover:text-gray-600 text-2xl" />
             </a>
         </div>
 
