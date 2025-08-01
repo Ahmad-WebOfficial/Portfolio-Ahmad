@@ -79,6 +79,20 @@ const Footer = () => {
           >
             <FaLinkedinIn className="text-[1.3rem] md:text-[1.4rem]" />
           </a>
+          <a
+              href="https://www.fiverr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiFiverr  className="hover:text-gray-600 -mt-2  text-4xl" />
+            </a>
+          <a
+              href="https://www.upwork.com/nx/find-work/best-matches"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaUpwork  className="hover:text-gray-600 text-2xl" />
+            </a>
         </ul>
       </div>
 
