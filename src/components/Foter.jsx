@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedinIn, FaUpwork } from "react-icons/fa";
-import { SiFiverr } from "react-icons/si";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -77,20 +76,6 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaLinkedinIn className="text-[1.3rem] md:text-[1.4rem]" />
-          </a>
-          <a
-            href="https://www.fiverr.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiFiverr className="-mt-2 text-[1.3rem] md:text-[1.4rem]" />
-          </a>
-          <a
-            href="https://www.upwork.com/nx/find-work/best-matches"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaUpwork className="text-[1.3rem] md:text-[1.4rem]" />
           </a>
         </ul>
       </div>
