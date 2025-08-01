@@ -58,7 +58,7 @@ export default function AboutMe() {
                   src="https://scontent.fisb22-1.fna.fbcdn.net/v/t39.30808-6/307331254_482457180563285_7413769522948618636_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=MpvytpiW2UoQ7kNvwGH4JOg&_nc_oc=Adk-eCm4vdpLiLzBHlAHnMIQ31tUZjoWNht9bw9SY1lBBvLFAP6SHb7KHzLfuBx2h5Y&_nc_zt=23&_nc_ht=scontent.fisb22-1.fna&_nc_gid=PakyhaDuQv9kGOrw3evG8w&oh=00_AfR4a5Q1STGu2jnjGhHzHYRAYpdbetU_y7LH0Drc1VepqQ&oe=688FA766"
                   alt="Govt High School"
                   className="w-40 rounded shadow cursor-pointer"
-                  onClick={() => openModal("https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqZQc8EbcVH-e_iiG8ALrY7Zy9i5R6MURfND_MXl-ZPDuMbxF74it7tADBpYkATEUyJMv5KMBmpA781r3YD5X-jo0XwKCTljJG6UOt4-6SAJcXeI1fRWmwXl3oI7lDlFpgs5c1ESA=s1360-w1360-h1020-rw")}
+                  onClick={() => openModal("https://scontent.fisb22-1.fna.fbcdn.net/v/t39.30808-6/307331254_482457180563285_7413769522948618636_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=MpvytpiW2UoQ7kNvwGH4JOg&_nc_oc=Adk-eCm4vdpLiLzBHlAHnMIQ31tUZjoWNht9bw9SY1lBBvLFAP6SHb7KHzLfuBx2h5Y&_nc_zt=23&_nc_ht=scontent.fisb22-1.fna&_nc_gid=PakyhaDuQv9kGOrw3evG8w&oh=00_AfR4a5Q1STGu2jnjGhHzHYRAYpdbetU_y7LH0Drc1VepqQ&oe=688FA766")}
                 />
               </div>
 
