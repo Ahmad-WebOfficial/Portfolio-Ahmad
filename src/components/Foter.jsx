@@ -91,7 +91,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaUpwork  className="text-[1.4rem] md:text-[1.4rem]" />
+              <FaUpwork  className="text-[1.4rem] -mt-1 md:text-[1.4rem]" />
             </a>
         </ul>
       </div>
