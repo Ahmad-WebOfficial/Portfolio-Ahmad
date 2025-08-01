@@ -7,7 +7,7 @@ import nexcent from "../images/nexcent.jpg";
 import graph from "../images/Graph.jpg";
 import api from "../images/api.jpg";
 import fa from "../images/fashion.jpg";
-import cle from "../images/clean.jpg";
+import cle from "../images/Clean.jpg";
 
 
 import Head from "../components/Head";
