@@ -1,6 +1,6 @@
 
 import React from "react";
-import logo from "../images/img555.jpg"; 
+import logo from "../images/img5555.jpg"; 
 
 const Loader = () => {
   return (
