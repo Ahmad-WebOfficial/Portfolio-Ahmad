@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiFiverr } from "react-icons/si";
 import { FaUpwork } from "react-icons/fa6";
 import { HiMenu, HiX } from "react-icons/hi";
-import logo from "../images/img555.jpg"; 
+import logo from "../images/img5555.jpg"; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
