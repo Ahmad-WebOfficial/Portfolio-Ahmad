@@ -73,13 +73,29 @@ const Footer = () => {
           >
             <FaLinkedinIn className="text-[1.3rem] md:text-[1.4rem]" />
           </a>
+
+<a
+              href="https://www.fiverr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiFiverr  className=" -mt-2  text-[1.3rem] md:text-[1.4rem" />
+            </a>
+          <a
+              href="https://www.upwork.com/nx/find-work/best-matches"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaUpwork  className="text-[1.3rem] md:text-[1.4rem" />
+            </a>
+          
         </ul>
       </div>
 
       <div className="border-t border-t-white"></div>
 
       <p className="text-center text-white py-7">
-        © 2025 Muhammad Ahmad Fridi | Web Developer
+        © 2025 Muhammad Ahmad Fridi | Full Stack Developer
       </p>
     </section>
   );
