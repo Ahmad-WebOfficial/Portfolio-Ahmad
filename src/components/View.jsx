@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import img1 from "../images/img77.jpg";
+import bookImage from "../images/book.jpg"; // 👈 import default image
 import Head from "../components/Head";
 import Foter from "../components/Foter";
 
@@ -63,17 +64,11 @@ const ProjectManager = () => {
                 }}
                 title={`Open ${project.name}`}
               >
-                {project.image ? (
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    className="w-14 h-14 object-cover rounded-lg border border-gray-700"
-                  />
-                ) : (
-                  <div className="w-40 h-45 bg-gray-600 rounded-lg flex items-center justify-center text-gray-400 text-xl">
-                    📁
-                  </div>
-                )}
+                <img
+                  src={project.image || bookImage}
+                  alt={project.name}
+                  className="w-14 h-14 object-cover rounded-lg border border-gray-700"
+                />
                 <span className="text-lg font-semibold text-white">
                   {project.name}
                 </span>
