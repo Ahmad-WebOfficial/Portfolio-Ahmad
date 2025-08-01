@@ -137,7 +137,7 @@ const ProfilePage = () => {
           </div>
         </section>
       </main>
-      <div className="mt-8">
+      <div className="mt-14">
        <Footer />
       </div>
 
