@@ -6,6 +6,8 @@ import books from "../images/books.jpg";
 import nexcent from "../images/nexcent.jpg";
 import graph from "../images/Graph.jpg";
 import api from "../images/api.jpg";
+import fa from "../images/fashion.jpg";
+import cle from "../images/clean.jpg";
 
 
 import Head from "../components/Head";
@@ -42,6 +44,16 @@ const ProjectManager = () => {
       name: "API Project",
       url: "https://perfect-product-api.vercel.app/",
       image: api,
+    },
+    {
+      name: "Cleaning Project",
+      url: "https://wix-cleanic-project.vercel.app/",
+      image: cle,
+    },
+    {
+      name: "Fashion Project",
+      url: "https://mejiwoo-fashion-project.vercel.app/",
+      image: fa,
     },
   ];
 
@@ -91,7 +103,7 @@ const ProjectManager = () => {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-40 h-40 object-cover rounded-lg border border-gray-700"
+                  className="w-45 h-40 object-cover rounded-lg border border-gray-700"
                 />
                 <span className="text-lg font-semibold text-white">
                   {project.name}
