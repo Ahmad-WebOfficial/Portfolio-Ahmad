@@ -9,7 +9,7 @@ const ProjectManager = () => {
   const projects = [
     {
       name: "Nexus News",
-      url: "https://perfect-nexcent.vercel.app/",
+      url: "https://perfect-news.vercel.app/",
       image: imgNews,
     },
     {
@@ -65,7 +65,7 @@ const ProjectManager = () => {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-14 h-14 object-cover rounded-lg border border-gray-700"
+                  className="w-20 h-20 object-cover rounded-lg border border-gray-700"
                 />
                 <span className="text-lg font-semibold text-white">
                   {project.name}
