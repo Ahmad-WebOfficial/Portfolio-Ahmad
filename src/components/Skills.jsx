@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Head"; // ✅ Check your file name here
-import Footer from "../components/Foter"; // ✅ Check your file name here
+import Header from "../components/Head"; 
+import Footer from "../components/Foter"; 
 
 const skills = [
   {
@@ -137,7 +137,7 @@ const ProfilePage = () => {
           </div>
         </section>
       </main>
-      <div className="mt-3">
+      <div className="mt-8">
        <Footer />
       </div>
 
