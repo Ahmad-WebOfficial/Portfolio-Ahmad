@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import img1 from "../images/img77.jpg";
-import bookImage from "../images/books.jpg"; // 👈 import default image
+import imgNews from "../images/news.jpg";
+import imgClock from "../images/clock.jpg";
 import Head from "../components/Head";
 import Foter from "../components/Foter";
 
 const ProjectManager = () => {
-  const [projects] = useState([
+  const projects = [
     {
       name: "Nexus News",
       url: "https://perfect-nexcent.vercel.app/",
-      image: null,
+      image: imgNews,
     },
     {
       name: "Digital Clock",
       url: "https://perfect-clock-ten.vercel.app/",
-      image: null,
+      image: imgClock,
     },
-  ]);
+  ];
 
   return (
     <>
@@ -65,7 +66,7 @@ const ProjectManager = () => {
                 title={`Open ${project.name}`}
               >
                 <img
-                  src={project.image || bookImage}
+                  src={project.image}
                   alt={project.name}
                   className="w-14 h-14 object-cover rounded-lg border border-gray-700"
                 />
