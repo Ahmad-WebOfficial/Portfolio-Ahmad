@@ -83,7 +83,7 @@ export default function AboutMe() {
                 <div className="flex-1 flex items-center gap-2">
                   <PiStudentFill className="text-green-700 text-xl" />
                   <p className="text-gray-600 font-semibold">
-                    Graduation: BSc in Software Engineering from UMT Lahore <br /> CGPA: 3.14/4.00
+                    Graduation: ADP in Software Engineering from UMT Lahore <br /> CGPA: 3.14/4.00
                   </p>
                 </div>
                 <img
