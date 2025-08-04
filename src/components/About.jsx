@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import img1 from "../images/ahmadfridi.jpg";
-import img1 from "../images/school.jpg";
+import img1234 from "../images/school.jpg";
 
 import { DiCodeigniter } from "react-icons/di";
 import { SiProtonmail } from "react-icons/si";
