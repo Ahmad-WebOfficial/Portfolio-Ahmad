@@ -60,7 +60,7 @@ export default function AboutMe() {
                   src={img1234}          
                   alt="Govt High School"
                   className="w-40 rounded shadow cursor-pointer"
-  onClick={() => openModal(images[1234])}
+  onClick={() => openModal(img[1234])}
                 />
               </div>
 
