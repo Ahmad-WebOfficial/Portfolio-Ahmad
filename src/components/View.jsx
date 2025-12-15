@@ -8,6 +8,8 @@ import graph from "../images/Graph.jpg";
 import api from "../images/api.jpg";
 import fa from "../images/fashion.jpg";
 import cle from "../images/Clean.jpg";
+import chatVideo from "../images/chat.mp4";
+import ecommerceVideo from "../images/e-commerus.mp4";
 
 
 import Head from "../components/Head";
@@ -15,6 +17,17 @@ import Foter from "../components/Foter";
 
 const ProjectManager = () => {
   const projects = [
+    {
+  name: "Chat App (Video)",
+  url: "", 
+  video: chatVideo,
+},
+{
+  name: "E-Commerce App (Video)",
+  url: "",
+  video: ecommerceVideo,
+},
+
     {
       name: "Nexus News",
       url: "https://perfect-news.vercel.app/",
