@@ -18,8 +18,9 @@ const HeroSection = () => {
             Full Stack Developer
           </h2>
           <p className="text-gray-300 text-sm md:text-base">
-            I specialize in Web Development.
-          </p>
+     I specialize in Web Development. I have 6 months of working
+            experience at Annimza, Okara (Pakistan), and 3 months of experience
+            working with Code Alfa, India.          </p>
           <Link to="/contact">
             <button className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow-md transition duration-300">
               Let's Get Started
