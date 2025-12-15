@@ -8,26 +8,15 @@ import graph from "../images/Graph.jpg";
 import api from "../images/api.jpg";
 import fa from "../images/fashion.jpg";
 import cle from "../images/Clean.jpg";
+
 import chatVideo from "../images/chat.mp4";
 import ecommerceVideo from "../images/e-commerus.mp4";
-
 
 import Head from "../components/Head";
 import Foter from "../components/Foter";
 
 const ProjectManager = () => {
   const projects = [
-    {
-  name: "Chat App (Video)",
-  url: "", 
-  video: chatVideo,
-},
-{
-  name: "E-Commerce App",
-  url: "",
-  image: ecommerceVideo,
-},
-
     {
       name: "Nexus News",
       url: "https://perfect-news.vercel.app/",
@@ -43,7 +32,7 @@ const ProjectManager = () => {
       url: "https://perfect-nexcent.vercel.app/",
       image: nexcent,
     },
-{
+    {
       name: "Books  Porject",
       url: "https://perfect-books.vercel.app/",
       image: books,
@@ -68,6 +57,15 @@ const ProjectManager = () => {
       url: "https://mejiwoo-fashion-project.vercel.app/",
       image: fa,
     },
+
+    {
+      name: "Chat App (Video)",
+      video: chatVideo,
+    },
+    {
+      name: "E-Commerce App (Video)",
+      video: ecommerceVideo,
+    },
   ];
 
   return (
@@ -77,9 +75,6 @@ const ProjectManager = () => {
       </div>
 
       <div className="h-full bg-[#1a282e] flex flex-col mt-15 items-center p-5 md:p-10 text-white">
-        
-        
-
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Muhammad Ahmad Fridi
         </h1>
@@ -88,10 +83,10 @@ const ProjectManager = () => {
           I am Muhammad Ahmad Fridi, a passionate Fullsatck Developer dedicated
           to building modern, responsive, and user-friendly websites. I have
           successfully completed multiple projects in web development using
-          React, Tailwind CSS, and JavaScript Nodejs and MongoDB. Many more projects are in
-          progress, as I continue to learn and grow in this fast-moving tech
-          world. My mission is to create impactful digital experiences that
-          solve real-world problems.
+          React, Tailwind CSS, and JavaScript Nodejs and MongoDB. Many more
+          projects are in progress, as I continue to learn and grow in this
+          fast-moving tech world. My mission is to create impactful digital
+          experiences that solve real-world problems.
         </p>
       </div>
 
@@ -111,13 +106,22 @@ const ProjectManager = () => {
                     window.open(project.url, "_blank");
                   }
                 }}
-                title={`Open ${project.name}`}
               >
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-45 h-40 object-cover rounded-lg border border-gray-700"
-                />
+                {/* ✅ image / video condition */}
+                {project.video ? (
+                  <video
+                    src={project.video}
+                    controls
+                    className="w-45 h-40 object-cover rounded-lg border border-gray-700"
+                  />
+                ) : (
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-45 h-40 object-cover rounded-lg border border-gray-700"
+                  />
+                )}
+
                 <span className="text-lg font-semibold text-white">
                   {project.name}
                 </span>
