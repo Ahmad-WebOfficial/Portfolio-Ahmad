@@ -57,15 +57,6 @@ const ProjectManager = () => {
       url: "https://mejiwoo-fashion-project.vercel.app/",
       image: fa,
     },
-
-    {
-      name: "Chat App (Video)",
-      video: chatVideo,
-    },
-    {
-      name: "E-Commerce App (Video)",
-      video: ecommerceVideo,
-    },
   ];
 
   return (
@@ -84,9 +75,7 @@ const ProjectManager = () => {
           to building modern, responsive, and user-friendly websites. I have
           successfully completed multiple projects in web development using
           React, Tailwind CSS, and JavaScript Nodejs and MongoDB. Many more
-          projects are in progress, as I continue to learn and grow in this
-          fast-moving tech world. My mission is to create impactful digital
-          experiences that solve real-world problems.
+          projects are in progress as I continue to learn and grow.
         </p>
       </div>
 
@@ -98,46 +87,43 @@ const ProjectManager = () => {
             <li
               key={i}
               className="flex justify-between items-center bg-gray-800 p-3 rounded hover:bg-green-700 transition cursor-pointer"
+              onClick={() => window.open(project.url, "_blank")}
             >
-              <div
-                className="flex items-center flex-1 space-x-4"
-                onClick={() => {
-                  if (project.url && project.url !== "#") {
-                    window.open(project.url, "_blank");
-                  }
-                }}
-              >
-                {project.video ? (
-                  <video
-                    src={project.video}
-                    controls
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      if (e.target.requestFullscreen) {
-                        e.target.requestFullscreen();
-                      } else if (e.target.webkitRequestFullscreen) {
-                        e.target.webkitRequestFullscreen();
-                      } else if (e.target.msRequestFullscreen) {
-                        e.target.msRequestFullscreen();
-                      }
-                    }}
-                    className="w-45 h-40 object-cover rounded-lg border border-gray-700 cursor-pointer"
-                  />
-                ) : (
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    className="w-45 h-40 object-cover rounded-lg border border-gray-700"
-                  />
-                )}
-
-                <span className="text-lg font-semibold text-white">
+              <div className="flex items-center space-x-4">
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-45 h-40 object-cover rounded-lg border border-gray-700"
+                />
+                <span className="text-lg font-semibold">
                   {project.name}
                 </span>
               </div>
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="w-full bg-black text-white">
+        <h2 className="text-3xl font-bold text-center py-6">
+          Video Projects
+        </h2>
+
+        <div className="w-full h-screen">
+          <video
+            src={chatVideo}
+            controls
+            className="w-full h-full object-contain"
+          />
+        </div>
+
+        <div className="w-full h-screen mt-10">
+          <video
+            src={ecommerceVideo}
+            controls
+            className="w-full h-full object-contain"
+          />
+        </div>
       </div>
 
       <div className="mt-25">
