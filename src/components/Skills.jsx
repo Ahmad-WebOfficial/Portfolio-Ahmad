@@ -93,6 +93,13 @@ const skills = [
     description: "Version control and collaboration",
     color: "bg-gray-100",
   },
+  {
+  title: "Express.js",
+  logo: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
+  description: "Fast & lightweight Node.js backend framework",
+  color: "bg-gray-100",
+},
+
 ];
 
 const ProfilePage = () => {
