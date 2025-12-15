@@ -23,9 +23,9 @@ const ProjectManager = () => {
   video: chatVideo,
 },
 {
-  name: "E-Commerce App (Video)",
+  name: "E-Commerce App",
   url: "",
-  video: ecommerceVideo,
+  image: ecommerceVideo,
 },
 
     {
