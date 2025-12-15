@@ -107,12 +107,21 @@ const ProjectManager = () => {
                   }
                 }}
               >
-                {/* ✅ image / video condition */}
                 {project.video ? (
                   <video
                     src={project.video}
                     controls
-                    className="w-45 h-40 object-cover rounded-lg border border-gray-700"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (e.target.requestFullscreen) {
+                        e.target.requestFullscreen();
+                      } else if (e.target.webkitRequestFullscreen) {
+                        e.target.webkitRequestFullscreen();
+                      } else if (e.target.msRequestFullscreen) {
+                        e.target.msRequestFullscreen();
+                      }
+                    }}
+                    className="w-45 h-40 object-cover rounded-lg border border-gray-700 cursor-pointer"
                   />
                 ) : (
                   <img
