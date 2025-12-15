@@ -106,7 +106,7 @@ const ProjectManager = () => {
 
       <div className="w-full bg-black text-white">
         <h2 className="text-3xl font-bold text-center py-6">
-          Video Projects
+          FullStack Projects
         </h2>
 
         <div className="w-full h-screen">
@@ -117,7 +117,7 @@ const ProjectManager = () => {
           />
         </div>
 
-        <div className="w-full h-screen mt-10">
+        <div className="w-full h-screen mt-15">
           <video
             src={ecommerceVideo}
             controls
@@ -126,7 +126,7 @@ const ProjectManager = () => {
         </div>
       </div>
 
-      <div className="mt-25">
+      <div className="mt-35">
         <Foter />
       </div>
     </>
