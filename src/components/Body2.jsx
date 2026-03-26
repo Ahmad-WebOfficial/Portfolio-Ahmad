@@ -43,7 +43,7 @@ const DevStackSection = () => {
           <FaCogs className="text-5xl text-purple-400 mb-4 mx-auto" />
           <h2 className="text-xl font-semibold">Full Stack</h2>
           <p className="text-sm mt-2 text-gray-300">
-            Complete Web Solutions
+            Complete Web Solutions MERN
           </p>
         </div>
       </div>
