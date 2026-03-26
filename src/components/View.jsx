@@ -8,6 +8,7 @@ import graph from "../images/Graph.jpg";
 import api from "../images/api.jpg";
 import fa from "../images/fashion.jpg";
 import cle from "../images/Clean.jpg";
+import blood from "../images/pakblood.jpeg";
 
 import chatVideo from "../images/chat.mp4";
 import ecommerceVideo from "../images/e-commerus.mp4";
@@ -17,6 +18,11 @@ import Foter from "../components/Foter";
 
 const ProjectManager = () => {
   const projects = [
+     {
+      name: "Blood Donation",
+      url: "https://pakblood.vercel.app/dashboard",
+      image: blood,
+    },
     {
       name: "Nexus News",
       url: "https://perfect-news.vercel.app/",
