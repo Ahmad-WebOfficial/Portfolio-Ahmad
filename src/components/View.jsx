@@ -107,12 +107,6 @@ const ProjectManager = () => {
         </ul>
       </div>
 
-      <div className="w-full bg-white text-black">
-        <h2 className="text-3xl font-bold text-center py-6">
-          FullStack Projects
-        </h2>
-      </div>
-
       <div className="mt-30">
         <Foter />
       </div>
