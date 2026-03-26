@@ -100,7 +100,7 @@ const ProfilePage = () => {
         <p className="text-center text-gray-300 max-w-2xl mb-10">
           I'm a passionate developer with hands-on experience in both front-end
           and backend technologies. Skilled in HTML, CSS, JavaScript, React,
-          React Native,Nodejs,Expressjs, and MongoDB. Always eager to learn and build
+          React Native, Nodejs, Expressjs, and MongoDB. Always eager to learn and build
           modern websites.
         </p>
 
