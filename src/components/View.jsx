@@ -10,9 +10,6 @@ import fa from "../images/fashion.jpg";
 import cle from "../images/Clean.jpg";
 import blood from "../images/pakblood.jpeg";
 
-import chatVideo from "../images/chat.mp4";
-import ecommerceVideo from "../images/e-commerus.mp4";
-
 import Head from "../components/Head";
 import Foter from "../components/Foter";
 
@@ -20,7 +17,7 @@ const ProjectManager = () => {
   const projects = [
      {
       name: "Blood Donation",
-      url: "https://pakblood.vercel.app/dashboard",
+      url: "https://pakblood.vercel.app",
       image: blood,
     },
     {
@@ -114,22 +111,6 @@ const ProjectManager = () => {
         <h2 className="text-3xl font-bold text-center py-6">
           FullStack Projects
         </h2>
-
-        <div className="w-full h-screen">
-          <video
-            src={chatVideo}
-            controls
-            className="w-full h-full object-contain"
-          />
-        </div>
-
-        <div className="w-full h-screen mt-15">
-          <video
-            src={ecommerceVideo}
-            controls
-            className="w-full h-full object-contain"
-          />
-        </div>
       </div>
 
       <div className="mt-30">
