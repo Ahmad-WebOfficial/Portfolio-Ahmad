@@ -33,7 +33,7 @@ const DevStackSection = () => {
           <FaServer className="text-5xl text-yellow-400 mb-4 mx-auto" />
           <h2 className="text-xl font-semibold">Backend</h2>
           <p className="text-sm mt-2 text-gray-300">
-            Node.js,MongoDB,APIs,Firebase
+            Node.js,Express.js,MongoDB,Firebase
           </p>
         </div>
 
