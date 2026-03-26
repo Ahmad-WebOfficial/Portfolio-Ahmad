@@ -10,11 +10,11 @@ const Footer = () => {
       <section className="md:flex md:justify-between items-center md:py-5">
         <div className="text-white pt-5 md:pt-0">
           <p className="text-[1.7rem] font-semibold md:hidden">
-            I am available for free lancing
+            I am available for Free Lancing
           </p>
           <p className="text-[1.7rem] font-semibold md:text-[2.3rem] hidden md:block">
             I am available for
-            <br /> freelancing.
+            <br /> FreeLancing.
           </p>
         </div>
 
@@ -80,14 +80,14 @@ const Footer = () => {
             <FaLinkedinIn className="text-[1.3rem] md:text-[1.4rem]" />
           </a>
           <a
-              href="https://www.fiverr.com/"
+              href="https://www.fiverr.com/ahmadfridi"
               target="_blank"
               rel="noopener noreferrer"
             >
               <SiFiverr  className=" -mt-2.5 text-5xl" />
             </a>
           <a
-              href="https://www.upwork.com/nx/find-work/best-matches"
+              href="https://www.upwork.com/freelancers/~0102bc76b960560f23"
               target="_blank"
               rel="noopener noreferrer"
             >
