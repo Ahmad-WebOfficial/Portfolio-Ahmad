@@ -45,12 +45,7 @@ const skills = [
     description: "Utility-first CSS framework",
     color: "bg-teal-100",
   },
-  {
-    title: "C++",
-    logo: "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
-    description: "High-performance programming language",
-    color: "bg-gray-200",
-  },
+  
   {
     title: "SPM",
     logo: "https://cdn-icons-png.flaticon.com/512/919/919841.png",
@@ -63,12 +58,7 @@ const skills = [
     description: "Source and software engineering",
     color: "bg-indigo-100",
   },
-  {
-    title: "Python Basic",
-    logo: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
-    description: "Basic programming with Python",
-    color: "bg-green-100",
-  },
+
   {
     title: "MongoDB",
     logo: "https://cdn-icons-png.flaticon.com/512/528/528101.png",
@@ -81,12 +71,7 @@ const skills = [
     description: "JavaScript runtime for backend",
     color: "bg-lime-100",
   },
-  {
-    title: "API",
-    logo: "https://cdn-icons-png.flaticon.com/512/595/595655.png",
-    description: "Connect services with REST APIs",
-    color: "bg-blue-50",
-  },
+  
   {
     title: "GitHub",
     logo: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
@@ -115,8 +100,8 @@ const ProfilePage = () => {
         <p className="text-center text-gray-300 max-w-2xl mb-10">
           I'm a passionate developer with hands-on experience in both front-end
           and backend technologies. Skilled in HTML, CSS, JavaScript, React,
-          React Native, Firebase and more. Always eager to learn and build
-          modern web and mobile apps.
+          React Native,Nodejs,Expressjs, and MongoDB. Always eager to learn and build
+          modern websites.
         </p>
 
         <section className="w-full max-w-6xl bg-[#162039] rounded-lg py-6 px-4 md:px-10">
