@@ -89,11 +89,11 @@ export default function AboutMe() {
                   </p>
                 </div>
                 <img
-                  src="https://humenglish.com/wp-content/uploads/2024/02/UMT-Lahore.jpg"
+                  src="https://www.facebook.com/photo/?fbid=157285903629716&set=a.157285873629719"
                   alt="UMT Lahore"
                   className="w-40 rounded shadow cursor-pointer"
                   onClick={() =>
-                    openModal("https://humenglish.com/wp-content/uploads/2024/02/UMT-Lahore.jpg")
+                    openModal("https://www.facebook.com/photo/?fbid=157285903629716&set=a.157285873629719")
                   }
                 />
               </div>
