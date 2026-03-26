@@ -107,7 +107,7 @@ const ProjectManager = () => {
         </ul>
       </div>
 
-      <div className="mt-30">
+      <div className="mt-23">
         <Foter />
       </div>
     </>
