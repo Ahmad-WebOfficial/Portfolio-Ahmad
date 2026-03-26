@@ -12,7 +12,7 @@ const HeroSection = () => {
     <div className="relative">
       <div className="flex flex-col md:flex-row items-center justify-between lg:p-30 px-8 py-16 bg-[#1b263b] min-h-screen">
         <div className="text-left space-y-4 md:w-[40rem]">
-          <h1 className="text-5xl font-bold text-black">Muhammad Ahmad Fridi</h1>
+          <h1 className="text-5xl font-bold text-white">Muhammad Ahmad Fridi</h1>
           <h2 className="text-xl text-green-500 lg:text-2xl font-semibold">
             Full Stack Developer
           </h2>
