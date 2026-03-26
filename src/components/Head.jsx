@@ -53,14 +53,14 @@ const Header = () => {
             <FaGithub className="hover:text-gray-600  text-lg" />
           </a>
           <a
-              href="https://www.fiverr.com/"
+              href="https://www.fiverr.com/ahmadfridi"
               target="_blank"
               rel="noopener noreferrer"
             >
               <SiFiverr  className="hover:text-gray-600 -mt-2  text-4xl" />
             </a>
           <a
-              href="https://www.upwork.com/nx/find-work/best-matches"
+              href="https://www.upwork.com/freelancers/~0102bc76b960560f23"
               target="_blank"
               rel="noopener noreferrer"
             >
