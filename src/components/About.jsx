@@ -89,11 +89,11 @@ export default function AboutMe() {
                   </p>
                 </div>
                 <img
-                  src="https://www.facebook.com/photo/?fbid=157285903629716&set=a.157285873629719"
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOuIes67OsniuutWYIBXcQ4lHm6g0CFyOjwEB34rSIqmDHot2QkZefr0ohKJmyxKdOodWgXGbF8zzD5-roq4NO4D3idP4EWOMt8Gh7gSzk3ohny8KeW4Pejt8e1PdFTJ34_hwVaBUFwIoXBid7isunJ5B_uyhumWrXx_2u0J0V7WyNuTaNUJthFihJjlwu/s800/1000070714.jpg"
                   alt="UMT Lahore"
                   className="w-40 rounded shadow cursor-pointer"
                   onClick={() =>
-                    openModal("https://www.facebook.com/photo/?fbid=157285903629716&set=a.157285873629719")
+                    openModal("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOuIes67OsniuutWYIBXcQ4lHm6g0CFyOjwEB34rSIqmDHot2QkZefr0ohKJmyxKdOodWgXGbF8zzD5-roq4NO4D3idP4EWOMt8Gh7gSzk3ohny8KeW4Pejt8e1PdFTJ34_hwVaBUFwIoXBid7isunJ5B_uyhumWrXx_2u0J0V7WyNuTaNUJthFihJjlwu/s800/1000070714.jpg")
                   }
                 />
               </div>
