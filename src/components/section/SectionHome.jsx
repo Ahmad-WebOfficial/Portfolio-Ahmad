@@ -180,7 +180,7 @@ const Home = () => {
                     whileTap={{ scale: 0.95 }}
                     title="View My Resume"
                     onClick={() => {
-                      const pdfUrl = "/resume.pdf";
+                      const pdfUrl = "/Ahmad-Mern-Developer.pdf";
                       const link = document.createElement("a");
                       link.href = pdfUrl;
                       link.download = "Muhammad_Ahmad_Fridi_Resume.pdf";
