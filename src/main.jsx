@@ -3,27 +3,28 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./index.css";
-import Head from "./components/Head";
-import Body1 from "./components/Body1";
-import Body2 from "./components/Body2";
-import Body3 from "./components/Body3";
-import Skills from "./components/Skills";
-import About from "./components/About";
-import Getin from "./components/Getin";
-import View from "./components/View";
-import Footer from "./components/Foter";
-import Loader from "./components/Loader";
+import Head from "./components/navbar/Header";
+import Footer from "./components/navbar/Footer";
+import Loader from "./components/loader/Loading";
+import SectionHome from "./components/section/SectionHome";
+import SectionProfile from "./components/section/SectionProfile";
+import SectionAbout from "./components/section/SectionAbout";
+import SectionSkills from "./components/section/SectionSkills";
+import SectionProjects from "./components/section/SectionProjects";
+import SectionContact from "./components/section/SectionContact";
 
 const Home = () => (
   <>
     <Head />
-    <Body1 />
-    <Body2 />
-    <Body3 />
+    <div id="home"><SectionHome /></div>
+    <SectionProfile />
+    <div id="about"><SectionAbout /></div>
+    <div id="skills"><SectionSkills /></div>
+    <div id="projects"><SectionProjects /></div>
+    <div id="contact"><SectionContact /></div>
     <Footer />
   </>
 );
-
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -31,7 +32,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); 
+    }, 4000); // 4 seconds ka loader time
 
     return () => clearTimeout(timer);
   }, []);
@@ -44,10 +45,6 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<View />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Getin />} />
       </Routes>
     </Router>
   );
